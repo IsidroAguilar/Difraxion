@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Difraxion ofrece soluciones de comunicación interna para empresas del sector público y privado con más de 15 años de experiencia.">
+    <meta name="keywords" content="comunicación interna, Difraxion, webinar, soluciones empresariales">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fuente Montserrat -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=cyrillic,cyrillic-ext,latin,latin-ext,vietnamese">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+    <title>Difraxion - Potencializa tu Comunicación Interna</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header fixed-top taglinecol py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-md-4 bg-black">
+                    <img src="images/objeto_inteligente_vector_4.png" alt="Logo Difraxion" class="img-fluid logo">
+                </div>
+                <!-- Tagline -->
+                <div class="col-md-8 text-center">
+                    <p class="taglineheader mb-0 fw-bold">#SomosLa<span class="text-white">Conexión</span>ATusIdeas</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section class="about py-5 bg-warning text-center">
+            <div class="container">
+                <br/>
+                <br/>
+                <p class="lead">
+                    En <strong class="bg-white p-1">Difraxion</strong> tenemos más de <strong class="bg-white p-1">15 años de experiencia</strong> trabajando con empresas del sector público y privado, a los cuales les ofrecemos proyectos a la medida de sus necesidades.
+                </p>
+                <p class="lead">
+                    Somos expertos en <strong>potencializar tus ideas y conectar con ellas a través de nuestras soluciones</strong> de comunicación interna.
+                </p>
+                <br/>
+                <br/>
+            </div>
+        </section>
+
+        <!-- Formulario Section -->
+        <section class="form-section py-5 bg-black" id="form-section">            
+            <div class="container">
+                <p class="text-center text-white"><strong>REGISTRO</strong></p>
+                <div class="form-container bg-white p-4 rounded">
+                    <form id="formulario" onsubmit="enviarFormulario(event)">
+                        <div class="row">
+                            <!-- Campo Nombre -->
+                            <div class="mb-3 col-md-6">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                            </div>
+                            <!-- Campo Email -->
+                            <div class="mb-3 col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Ingresa tu email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Campo Teléfono -->
+                            <div class="mb-3 col-md-6">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu teléfono" required>
+                            </div>
+                            <!-- Campo Ciudad -->
+                            <div class="mb-3 col-md-6">
+                                <label for="ciudad" class="form-label">Ciudad</label>
+                                <input type="text" class="form-control" id="ciudad" placeholder="Ingresa tu ciudad" required>
+                            </div>
+                        </div>
+                        <!-- Botón de Enviar -->
+                        <div class="text-left">
+                            <button type="submit" class="btn btn-warning">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section py-5 bg-warning" id="video-section" style="display:none;">
+            <div class="container">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/4jvpvsqpHGc?si=fYqiBLt3Lyv5eQyp" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="alert alert-success mt-3 text-center" id="mensaje-enviado">
+                    Mensaje enviado correctamente.
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Frase -->
+        <section class="highlight-section py-5 bg-warning">
+            <img src="images/shape_copia_8.png" class="top-right-image">
+            <div class="container">
+                <div class="highlight-text align-items-center text-center">
+                    <span class="black">POTENCIALIZA</span>
+                    <br/>
+                    <span class="bg-black text-white p-1">TU COMUNICACION</span>
+                    <br/>
+                    
+                        <img src="images/comunicación interna.png" style="max-width: 60%; margin: -30%;">
+                        <span class="bg-black text-white p-1">INTERNA.</span>
+                    <br/>
+                    <img src="images/comunicación interna.png" style="max-width: 60%;">
+                    <img src="images/comunicación interna.png" style="max-width: 60%; margin: 30%; margin-top: 0; margin-bottom: 0;">
+                </div>
+                <br/>
+                <br/>
+                <div class="row justify-content-around">
+                    <!-- Persona 1 -->
+                    <div class="col-md-5 text-center mb-4">
+                        <img src="images/elipse_1_copia.png" alt="David Enriquez" class="img-fluid bg-white speaker-image rounded-circle">
+                        <h2 class="mt-3">DAVID ENRIQUEZ</h2>
+                        <p>Director General<br>Difraxion</p>
+                    </div>
+                    <!-- Persona 2 -->
+                    <div class="col-md-5 text-center mb-4">
+                        <img src="images/elipse_1_copia_3.png" alt="Andrea Huerta" class="img-fluid bg-white speaker-image rounded-circle">
+                        <h2 class="mt-3">ANDREA HUERTA</h2>
+                        <p>Gerente de proyectos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-black text-white text-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo Footer -->
+                <div class="col-md-3">
+                    <img src="images/objeto_inteligente_vector_8.png" alt="Logo Difraxion" class="img-fluid footer-logo mb-3">
+                </div>
+                <!-- Texto Footer -->
+                <div class="col-md-6">
+                    <p class="mb-0 small">© Difraxion is a registered licensed by Difraxion.</p>
+                </div>
+                <!-- Certificación -->
+                <div class="col-md-3">
+                    <img src="images/objeto_inteligente_vector_6.png" alt="Certificación" class="img-fluid certification">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (opcional, si necesitas componentes interactivos) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- EmailJS -->
+    <script type="text/javascript">
+    
+    function enviarFormulario(event) {
+    event.preventDefault();
+
+    const nombre = document.getElementById('nombre').value;
+    const email = document.getElementById('email').value;
+    const telefono = document.getElementById('telefono').value;
+    const ciudad = document.getElementById('ciudad').value;
+
+    const asunto = "TEST DFX";
+    const cuerpo = `Nombre: ${nombre}%0D%0AEmail: ${email}%0D%0ATeléfono: ${telefono}%0D%0ACiudad: ${ciudad}`;
+    
+    // Enlace mailto con los datos
+    window.location.href = `mailto:raul@difraxion.com?subject=${encodeURIComponent(asunto)}&body=${cuerpo}`;
+
+    // Cambiar sección
+    setTimeout(() => {
+        console.log('Correo posiblemente enviado correctamente.');
+        document.getElementById("form-section").style.display = "none";
+        document.getElementById("video-section").style.display = "block";
+        document.getElementById("mensaje-enviado").style.display = "block";
+    }, 3000);
+
+    }    
+    </script>
+</body>
+</html>
